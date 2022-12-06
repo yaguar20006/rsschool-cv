@@ -1,7 +1,7 @@
 
 # [rsschool-cv](адрес "Описание")
 # Yrmoshuk Arseneu
-### Contact information:
+### Contact information: 
 **Phone:** +375292695091
 
 
