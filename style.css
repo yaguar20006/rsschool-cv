@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  background-image: url(./assets/img/bg1.gif);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+  background: rgba(1, 0, 52, 0.7);
+  border-radius: 10px;
+  padding: 20px 60px;
+}
+
+a {
+  color: #ffffff;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.nav-link {
+  color: #ffffff;
+  padding: 17px;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover,
+.contacts-link:hover {
+  background-color: rgba(255, 192, 203, 0.548);
+  box-shadow: 0 0 40px pink;
+  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.main {
+  margin: 70px 0;
+}
+
+.avatar {
+  width: 250px;
+  border-radius: 100%;
+}
+
+h1 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 5px;
+  font-size: 100px;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff;
+}
+
+#profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.profile-professional {
+  text-align: center;
+  font-size: 30px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff;
+  border-top: 3px solid #ffffff;
+  padding-top: 20px;
+  width: 90%;
+}
+
+.contacts-icon {
+  width: 30px;
+}
+
+.contacts-link {
+  line-height: 50px;
+  color: #ffffff;
+  margin-left: 15px;
+  padding: 0 5px;
+}
+
+.summary-info {
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+
+.summary-info::before {
+  content: "I";
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff;
+  line-height: 22px;
+}
+
+.summary-meme {
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section:not(.section:first-of-type) {
+  width: 50%;
+}
+
+.section:first-of-type {
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.circle-item {
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.circle-item::before {
+  content: url(./assets/img/circle-skills.svg);
+  margin-right: 10px;
+}
+
+code {
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.project-link:hover {
+  width: 150px;
+  background-color: rgba(255, 192, 203, 0.548);
+  box-shadow: 0 0 40px pink;
+  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.github {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(./assets/img/github.svg);
+  background-size: 100%;
+  transition: 1s ease-in-out;
+}
+
+.github:hover {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(./assets/img/github-hover.svg);
+  background-size: 100%;
+  transition: 1s ease-in-out;
+}
+
+.rsschool {
+  display: block;
+  width: 90px;
+  height: 35px;
+  background-image: url(./assets/img/rs_school_js.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  transition: 1s ease-in-out;
+}
+
+.rsschool:hover {
+  display: block;
+  width: 90px;
+  height: 35px;
+  background-image: url(./assets/img/rs_school_js-hover.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: 1s ease-in-out;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+@media all and (max-width: 1280px) {
+  .section-title {
+    text-align: center;
+  }
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    justify-content: center;
+    gap: 10px;
+  }
+  .rsschool {
+    margin: 0;
+  }
+}
+@media all and (max-width: 960px) {
+  .nav {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    padding: 20px 40px;
+    margin: 0;
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .profile-professional {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media all and (max-width: 640px) {
+  .contacts-icon {
+    width: 20px;
+  }
+  .contacts-link {
+    line-height: 50px;
+    color: #ffffff;
+    margin-left: 5px;
+    padding: 0 5px;
+  }
+  .summary-meme {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
